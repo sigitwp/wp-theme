@@ -1,4 +1,5 @@
-/* Main Style */
+/* Bootstrap Extended */
+
 /*
   @font-face {
     font-family: 'Helvetica Neue';
@@ -33,15 +34,30 @@
   }
 */
 
+/* Override Bootstrap */
 body {
   font-family: 'Helvetica Neue', 'Segoe UI', 'Open Sans', Arial, sans-serif;
 }
-
-.section {
-  display: block;
-}
-
 .jumbotron {
   padding-right: 30px;
   padding-left: 30px;
+}
+
+/* New Added */
+.section {
+  display: block;
+}
+.main-navbar-fixed-top {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .table-row {
+    display: table;
+    table-layout: fixed;
+  }
+  .table-row [class^="col-"] {
+    display: table-cell;
+    float: none;
+  }
 }
