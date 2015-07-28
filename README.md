@@ -1,1 +1,1 @@
-Repository For WP Web
+Repository For WP Theme
