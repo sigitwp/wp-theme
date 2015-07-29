@@ -47,10 +47,6 @@ body {
 .section {
   display: block;
 }
-.main-navbar-fixed-top {
-  margin-top: 70px;
-  margin-bottom: 30px;
-}
 @media (min-width: 768px) {
   .table-row {
     display: table;
