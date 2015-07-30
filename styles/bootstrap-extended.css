@@ -3,6 +3,93 @@
 /* Override Bootstrap */
 body {
   font-family: 'Helvetica Neue', 'Segoe UI', 'Open Sans', Arial, sans-serif;
+  background-color: #eeeeee;
+}
+
+.navbar-default {
+  background-color: #002154;
+}
+.navbar-fixed-top {
+  border-width: 0;
+}
+.navbar-default .navbar-brand {
+  padding: 7px;
+  color: rgba(255, 255, 255, 0.87);
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-brand > img {
+  max-width: 36px;
+}
+.navbar-default .navbar-text {
+  color: rgba(255, 255, 255, 0.87);
+}
+.navbar-default .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 0.87);
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  border-bottom: 3px solid #26497F;
+  padding-bottom: 12px;
+  color: #ffffff;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: rgba(255, 255, 255, 0.57);
+}
+.navbar-toggle {
+  border: 0;
+  border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #26497F;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgba(255, 255, 255, 0.87);;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+
+/* Material Icons */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/material-icons-regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('material-icons-regular'),
+       url(../fonts/material-icons-regular.woff2) format('woff2'),
+       url(../fonts/material-icons-regular.woff) format('woff'),
+       url(../fonts/material-icons-regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
 }
 
 /* New Added */
@@ -19,39 +106,88 @@ body {
 .section {
   display: block;
 }
-.navbar-default {
-  background-color: #002154;
+.gap-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.navbar-fixed-top {
-  border-width: 0;
+.fixed-navbar-content {
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
-.navbar-default .navbar-brand {
-  color: rgba(255, 255, 255, 0.87);
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #ffffff;
-}
-.navbar-default .navbar-text {
-  color: rgba(255, 255, 255, 0.87);
-}
-.navbar-default .navbar-nav > li > a {
-  color: rgba(255, 255, 255, 0.87);
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #ffffff;
+.bg-cover {
   background-color: #26497F;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 180px;
 }
-.navbar-default .navbar-nav > .disabled > a,
-.navbar-default .navbar-nav > .disabled > a:hover,
-.navbar-default .navbar-nav > .disabled > a:focus {
-  color: rgba(255, 255, 255, 0.57);
+.bg-bump {
+  margin-bottom: -180px;
+}
+@media (min-width: 480px) {
+  .bg-cover {
+    min-height: 240px;
+  }
+  .bg-bump {
+    margin-bottom: -240px;
+  }
+}
+@media (min-width: 768px) {
+  .bg-cover {
+    min-height: 320px;
+  }
+  .bg-bump {
+    margin-bottom: -320px;
+  }
+}
+.box-layer-light {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27);
+}
+.box-layer-dark {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.87);
+}
+.card {
+  position: relative;
+  background-color: #ffffff;
+}
+.card > .thumbnail {
+  border-radius: 0;
+}
+.card > .single,
+.card > .multi {
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #dddddd;
+}
+.card > .single p,
+.card > .multi p:last-child {
+  margin-bottom: 0;
+}
+.card > .multi p {
+  margin-bottom: 4px;
+}
+
+/* Specific Needs */
+.profile-id {
+  margin-bottom: 40px
+}
+.profile-id h3 {
+  margin-top: 10px;
+}
+.profile-id .sub {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.profile-ls > .ls-item {
+  margin-bottom: 30px;
+}
+.profile-ls > .ls-item h4 {
+  margin-bottom: 15px;
 }
 
 /* Blue Pallete From Adobe Kuler */
@@ -73,5 +209,7 @@ body {
 
 /* The Pallete Winner Is Number 2 */
 /* 002154, 4C93FF, 0064FF, 26497F, 0050CC */
+/* 0053D4, 0D47A1, 003587, 407AD4, 002154 */
 
 /* http://tealtribe.s3.amazonaws.com/203585ebdddf216b75729f3fb5b66eda75870707151c.jpg */
+/* http://edition.cnn.com/specials/profiles */
