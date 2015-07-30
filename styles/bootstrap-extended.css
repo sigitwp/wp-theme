@@ -1,52 +1,11 @@
 /* Bootstrap Extended */
 
-/*
-  @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/HelveticaNeue/HelveticaNeueLTStd-Roman.otf') format('opentype');
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/HelveticaNeue/HelveticaNeueLTStd-Bd.otf') format('opentype');
-    font-weight: 700;
-  }
-  @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/HelveticaNeue/HelveticaNeueLTStd-Lt.otf') format('opentype');
-    font-weight: 300;
-  }
-
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-  }
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
-    font-weight: 300;
-  }
-*/
-
 /* Override Bootstrap */
 body {
   font-family: 'Helvetica Neue', 'Segoe UI', 'Open Sans', Arial, sans-serif;
 }
-.jumbotron {
-  padding-right: 30px;
-  padding-left: 30px;
-}
 
 /* New Added */
-.section {
-  display: block;
-}
 @media (min-width: 768px) {
   .table-row {
     display: table;
@@ -57,3 +16,62 @@ body {
     float: none;
   }
 }
+.section {
+  display: block;
+}
+.navbar-default {
+  background-color: #002154;
+}
+.navbar-fixed-top {
+  border-width: 0;
+}
+.navbar-default .navbar-brand {
+  color: rgba(255, 255, 255, 0.87);
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: rgba(255, 255, 255, 0.87);
+}
+.navbar-default .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 0.87);
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #26497F;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: rgba(255, 255, 255, 0.57);
+}
+
+/* Blue Pallete From Adobe Kuler */
+/* 0D47A1 */
+
+/* 1 */
+/* 0D47A1, 619FFF, 1570FF, 314F7F, 105ACC */
+/* 2 */
+/* 0053D4, 0D47A1, 003587, 407AD4, 002154 */
+/* 3 */
+/* 1369ED, 436EB1, 0D47A1, 5A94ED, 09316E */
+/* 4 */
+/* 0A387F, 4C92FF, 0064FF, 0D47A1, 0050CC */
+/* 5 */
+/* 0A387F, 619FFF, 1570FF, 314F7F, 0D47A1 */
+
+/* Most Dark From Each Pallete - Pallete Number 1 Not Included */
+/* 002154, 09316E, 00327F, 0A387F */
+
+/* The Pallete Winner Is Number 2 */
+/* 002154, 4C93FF, 0064FF, 26497F, 0050CC */
+
+/* http://tealtribe.s3.amazonaws.com/203585ebdddf216b75729f3fb5b66eda75870707151c.jpg */
