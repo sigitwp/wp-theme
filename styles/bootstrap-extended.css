@@ -3,7 +3,7 @@
 /* Override Bootstrap */
 body {
   font-family: 'Helvetica Neue', 'Segoe UI', 'Open Sans', Arial, sans-serif;
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
 }
 
 .navbar-id .navbar {
@@ -25,6 +25,7 @@ body {
 }
 .navbar-id .navbar-brand > img {
   max-width: 36px;
+  border-radius: 8px;
 }
 .navbar-id .navbar-default .navbar-text {
   color: rgba(255, 255, 255, 0.87);
@@ -63,9 +64,6 @@ body {
 .navbar-id .navbar-collapse {
   border-top: 0;
 }
-.navbar-id .navbar-form {
-  display: none;
-}
 .navbar-id .navbar-form .form-control,
 .navbar-id .navbar-form .btn {
   background-color: #26497F;
@@ -89,10 +87,15 @@ body {
   opacity: 0.8;
 }
 .navbar-id .navbar-form .btn {
-  padding: 4px 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 21px;
+}
+.navbar-id .navbar-right {
+  display: none;
 }
 @media (min-width: 768px) {
-  .navbar-id .navbar-form {
+  .navbar-id .navbar-right {
     display: block;
   }
 }
@@ -102,13 +105,23 @@ body {
   table-layout: fixed;
   float:none;
 }
+.navbar-id .user-icon {
+  padding: 8px 7px;
+}
+.navbar-id .user-icon .block-blue {
+  padding: 2px 8px 0;
+  border-radius: 8px;
+  background-color: #26497F;
+  font-size: 32px;
+}
 
 /* Material Icons */
+/*
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/material-icons-regular.eot); /* For IE6-8 */
+  src: url(../fonts/material-icons-regular.eot);
   src: local('Material Icons'),
        local('material-icons-regular'),
        url(../fonts/material-icons-regular.woff2) format('woff2'),
@@ -132,6 +145,15 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  vertical-align: middle;
+}
+*/
+
+/* Ionicicons */
+.ion {
+  vertical-align: baseline;
+}
+.ion-mid {
   vertical-align: middle;
 }
 
@@ -242,6 +264,12 @@ body {
 .profile-ls > .ls-item h4 {
   margin-bottom: 15px;
 }
+.profile-ls > .ls-item .ion-mid {
+  font-size: 18px;
+  float: left;
+  display: block;
+  width: 28px;
+}
 
 /* Blue Pallete From Adobe Kuler */
 /* 0D47A1 */
@@ -266,4 +294,4 @@ body {
 
 /* http://tealtribe.s3.amazonaws.com/203585ebdddf216b75729f3fb5b66eda75870707151c.jpg */
 /* http://edition.cnn.com/specials/profiles */
-/* #007AFF */
+/* #007AFF
