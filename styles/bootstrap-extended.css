@@ -3,7 +3,7 @@
 /* Override Bootstrap */
 body {
   font-family: 'Helvetica Neue', 'Segoe UI', 'Open Sans', Arial, sans-serif;
-  /* background-color: #eeeeee; */
+  background-color: #eeeeee;
 }
 
 .navbar-id .navbar {
@@ -269,6 +269,23 @@ body {
   float: left;
   display: block;
   width: 28px;
+}
+
+.ls-card a {
+  padding: 10px 20px;
+  color: #333333;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #dddddd;
+}
+.media-left, .media > .pull-left {
+  padding-right: 15px;
+}
+.ls-card .media .media-object {
+  max-width: 60px;
+}
+.ls-card .media .media-body p {
+  margin-bottom: 2px;
 }
 
 /* Blue Pallete From Adobe Kuler */
