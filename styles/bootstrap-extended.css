@@ -63,34 +63,37 @@ body {
 .navbar-id .navbar-collapse {
   border-top: 0;
 }
-.navbar-id .navbar-tab {
-  margin-top: 50px;
-  width: 100%;
+.navbar-id .navbar-form {
+  display: none;
 }
-.navbar-id .navbar-tab .container {
-  padding: 0;
+.navbar-id .navbar-form .form-control,
+.navbar-id .navbar-form .btn {
+  background-color: #26497F;
+  border-color: #26497F;
+  color: #ffffff;
 }
-.navbar-id .navbar-tab .nav-pills > li {
-  border-bottom: 3px solid transparent;
+.navbar-id .navbar-form .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
-.navbar-id .navbar-tab .nav-pills > li.active {
-  border-bottom: 3px solid #26497F;
+.navbar-id .navbar-form .form-control::-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.8;
 }
-.navbar-id .navbar-tab .nav-pills > li > a {
-  border-radius: 0;
-  color: inherit;
-  background-color: #ffffff;
+.navbar-id .navbar-form .form-control:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.8;
 }
-.navbar-id .navbar-tab .nav-justified > li {
-  display: table-cell;
-  width: 1%;
+.navbar-id .navbar-form .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 0.8;
 }
-.navbar-id .navbar-tab .nav-justified > li > a {
-  margin-bottom: 0;
+.navbar-id .navbar-form .btn {
+  padding: 4px 8px;
 }
 @media (min-width: 768px) {
-  .navbar-id .navbar-tab {
-    display: none;
+  .navbar-id .navbar-form {
+    display: block;
   }
 }
 .navbar-id .navbar-center {
@@ -129,6 +132,7 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  vertical-align: middle;
 }
 
 /* New Added */
@@ -161,25 +165,22 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 180px;
+  min-height: 320px;
 }
-.bg-bump {
-  margin-bottom: -180px;
-}
-@media (min-width: 480px) {
-  .bg-cover {
-    min-height: 240px;
-  }
-  .bg-bump {
-    margin-bottom: -240px;
-  }
+.bump-bg {
+  margin-top: -280px;
 }
 @media (min-width: 768px) {
-  .bg-cover {
-    min-height: 320px;
+  .bump-bg {
+    margin-top: -180px;
   }
-  .bg-bump {
-    margin-bottom: -320px;
+}
+@media (min-width: 991px) {
+  .bg-cover {
+    min-height: 360px;
+  }
+  .bump-bg {
+    margin-top: -240px;
   }
 }
 .box-layer-light {
@@ -221,7 +222,10 @@ body {
 
 /* Specific Needs */
 .profile-id {
-  margin-bottom: 40px
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 320px;
 }
 .profile-id h3 {
   margin-top: 10px;
