@@ -6,59 +6,98 @@ body {
   background-color: #eeeeee;
 }
 
-.navbar-default {
+.navbar-id .navbar {
+  margin-bottom: 0;
+}
+.navbar-id .navbar-default {
   background-color: #002154;
 }
-.navbar-fixed-top {
+.navbar-id .navbar-fixed-top {
   border-width: 0;
 }
-.navbar-default .navbar-brand {
+.navbar-id .navbar-default .navbar-brand {
   padding: 7px;
   color: rgba(255, 255, 255, 0.87);
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.navbar-id .navbar-default .navbar-brand:hover,
+.navbar-id .navbar-default .navbar-brand:focus {
   color: #ffffff;
 }
-.navbar-brand > img {
+.navbar-id .navbar-brand > img {
   max-width: 36px;
 }
-.navbar-default .navbar-text {
+.navbar-id .navbar-default .navbar-text {
   color: rgba(255, 255, 255, 0.87);
 }
-.navbar-default .navbar-nav > li > a {
+.navbar-id .navbar-default .navbar-nav > li > a {
   color: rgba(255, 255, 255, 0.87);
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-id .navbar-default .navbar-nav > li > a:hover,
+.navbar-id .navbar-default .navbar-nav > li > a:focus {
   color: #ffffff;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-id .navbar-default .navbar-nav > .active > a,
+.navbar-id .navbar-default .navbar-nav > .active > a:hover,
+.navbar-id .navbar-default .navbar-nav > .active > a:focus {
   border-bottom: 3px solid #26497F;
   padding-bottom: 12px;
   color: #ffffff;
   background-color: transparent;
 }
-.navbar-default .navbar-nav > .disabled > a,
-.navbar-default .navbar-nav > .disabled > a:hover,
-.navbar-default .navbar-nav > .disabled > a:focus {
+.navbar-id .navbar-default .navbar-nav > .disabled > a,
+.navbar-id .navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-id .navbar-default .navbar-nav > .disabled > a:focus {
   color: rgba(255, 255, 255, 0.57);
 }
-.navbar-toggle {
+.navbar-id .navbar-toggle {
   border: 0;
   border-radius: 0;
 }
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar-id .navbar-default .navbar-toggle:hover,
+.navbar-id .navbar-default .navbar-toggle:focus {
   background-color: #26497F;
 }
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-id .navbar-default .navbar-toggle .icon-bar {
   background-color: rgba(255, 255, 255, 0.87);;
 }
-.navbar-collapse {
+.navbar-id .navbar-collapse {
   border-top: 0;
+}
+.navbar-id .navbar-tab {
+  margin-top: 50px;
+  width: 100%;
+}
+.navbar-id .navbar-tab .container {
+  padding: 0;
+}
+.navbar-id .navbar-tab .nav-pills > li {
+  border-bottom: 3px solid transparent;
+}
+.navbar-id .navbar-tab .nav-pills > li.active {
+  border-bottom: 3px solid #26497F;
+}
+.navbar-id .navbar-tab .nav-pills > li > a {
+  border-radius: 0;
+  color: inherit;
+  background-color: #ffffff;
+}
+.navbar-id .navbar-tab .nav-justified > li {
+  display: table-cell;
+  width: 1%;
+}
+.navbar-id .navbar-tab .nav-justified > li > a {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .navbar-id .navbar-tab {
+    display: none;
+  }
+}
+.navbar-id .navbar-center {
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  float:none;
 }
 
 /* Material Icons */
@@ -153,8 +192,18 @@ body {
   position: relative;
   background-color: #ffffff;
 }
+.transparent-card {
+  background-color: transparent;
+}
 .card > .thumbnail {
   border-radius: 0;
+}
+.transparent-card > .thumbnail {
+  background-color: transparent;
+  border-color: transparent;
+}
+.transparent-card > .thumbnail .caption {
+  color: #ffffff;
 }
 .card > .single,
 .card > .multi {
@@ -213,3 +262,4 @@ body {
 
 /* http://tealtribe.s3.amazonaws.com/203585ebdddf216b75729f3fb5b66eda75870707151c.jpg */
 /* http://edition.cnn.com/specials/profiles */
+/* #007AFF */
